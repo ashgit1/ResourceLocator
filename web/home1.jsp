@@ -194,7 +194,7 @@ function whichTenant(txt) {
 	<!-- This scripts are placed here purposely. If placed in head then doesn't works -->
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src="js/resource.js"></script>
-	<!-- ############## OVER ################ --> 
+	<!-- ############### OVER ################ --> 
 
   </body>
 
