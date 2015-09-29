@@ -38,7 +38,7 @@ public class GetUrlServlet extends HttpServlet {
 		UrlDao urlDAO;
 		
 		String tenantName = request.getParameter("tenant");
-		System.out.println("button presssed : " + tenantName);
+		logger.info("button presssed : " + tenantName);
 		
 		
 		try {
