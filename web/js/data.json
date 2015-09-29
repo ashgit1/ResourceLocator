@@ -1,0 +1,30 @@
+[
+		{
+			"tenant" 		 : "Asda QA3",
+			"url"			 : "http://groceries-qa3.asda.com/asda-webstore/landing/home.shtml"
+		},
+		{
+			"tenant" 		 : "USGM",
+			"url"			 : "http://www.walmart.com"
+		},
+		{
+			"tenant" 		 : "Asda",
+			"url"			 : "http://groceries.asda.com"
+		},
+		{
+			"tenant" 		 : "Gmc",
+			"url"			 : "http://store-stage.walmart.ca/"
+		},
+		{
+			"tenant" 		 : "Usgr",
+			"url"			 : "http://usgroceries-qa.walmart.com/"
+		},
+		{
+			"tenant" 		 : "Samus",
+			"url"			 : "http://dev3-www.samsclub.com/sams/"
+		},
+		{
+			"tenant" 		 : "fb",
+			"url"			 : "http://facebook.com/ashishkgrich"
+		}
+]
