@@ -169,7 +169,7 @@ function whichTenant(txt) {
 	
 	<label id="lblTenant">Select Tenant</label><br/><br/>
 	
-	Search : <input type="text" ng-model="search" placeholder="Type here" class="tb1" onkeyup="showTableWhileTyped(this)"><br/></br>
+	Search : <input type="text" ng-model="search" placeholder="Search here" class="tb1" onkeyup="showTableWhileTyped(this)"><br/></br>
 
 			<div id="showtable" style="display: none">	
 				<table BORDER="1" class="bordered" ng-show="(urls | filter:search).length">
