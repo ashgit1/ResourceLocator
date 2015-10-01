@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<meta charset="UTF-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script>
+	$(function() {
+		$("#Menu > li a").each(function() {
+			var self = $(this);
+			var href = self.attr("href");
+			self.attr("href", "javascript: void(0);");
+			self.click(function() {
+				$("#Contents").load(href);
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<li><a href="#">DAL1</a>
+		<ul class="sub-menu" id="Menu">
+			<li><a href="report.html">REPORT</a></li>
+			<li><a href="refresh.html">REFRESH</a></li>
+			<li><a href="hypervisor.html">HYPERVISOR STATUS</a></li>
+		</ul></li>
+
+	<li><a href="#">DAL2</a>
+	<ul class="sub-menu" id="Menu">
+		<li><a href="report.html">REPORT</a></li>
+		<li><a href="refresh.html">REFRESH</a></li>
+		<li><a href="hypervisor.html">HYPERVISOR STATUS</a></li>
+	</ul>
+	</li>
+	
+	<hr>
+	<div id="Contents"></div>
+
+</body>
+</html>
