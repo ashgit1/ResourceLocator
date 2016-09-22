@@ -75,17 +75,22 @@ function showTableWhileTyped(txt) {
 }
 function whichTenant(txt) {	
 	document.getElementById("lblTenant").style.fontSize = "xx-large";
-	if(txt == 'UKGR'){
+	if(txt == 'Personal'){
 		document.getElementById("lblTenant").style.color = '#007DC6';
-	}else if(txt == 'USGM'){
+	}else if(txt == 'Java'){
 		document.getElementById("lblTenant").style.color = '#007DC6';
-	}else if(txt == 'USGR'){
+	}else if(txt == 'Terminal'){
 		document.getElementById("lblTenant").style.color = '#007DC6';
-	}else if(txt == 'SAMUS'){
+	}else if(txt == 'CI-CD'){
 		document.getElementById("lblTenant").style.color = '#007DC6';
-	}else if(txt == 'GMC'){
+	}else if(txt == 'No-Sql'){
 		document.getElementById("lblTenant").style.color = '#007DC6';
-	}else{
+	}else if(txt == 'Containers'){
+		document.getElementById("lblTenant").style.color = '#007DC6';
+	}else if(txt == 'Investments'){
+		document.getElementById("lblTenant").style.color = '#007DC6';
+	}
+	else{
 		document.getElementById("lblTenant").style.color = '#007DC6';
 	}
 	
@@ -104,62 +109,78 @@ function whichTenant(txt) {
 <div ng-app="myApp">
         <div ng-controller="MyController">
           
-			<div ng-init="btnId1='ASDA'; btnId2='USGM'; btnId3='USGR'; btnId4='SAMUS'; btnId5='GMC'; btnId6='OTHERS'">
+			<div ng-init="btnId1='Personal'; btnId2='Java'; btnId3='Terminal'; btnId4='CI-CD'; 
+						  btnId5='No-Sql'; btnId6='Containers'; btnId7='Investments'; btnId8='OTHERS' ">
 			
-				<a href="#" ng-click="getUrlFromTenant(btnId1)" ng-attr-id="btnId1" onclick='whichTenant("UKGR")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId1)" ng-attr-id="btnId1" onclick='whichTenant("Personal")'>
 					<div class="button-fill blue">
-						<div class="button-text">UK Groceries</div>
+						<div class="button-text">Personal</div>
 						<div class="button-inside">
-							<div class="inside-text">ukgr&nbsplinks</div>
+							<div class="inside-text">personal&nbsplinks</div>
 						</div>
 					</div>
 				</a>
-				<a href="#" ng-click="getUrlFromTenant(btnId2)" ng-attr-id="btnId2" onclick='whichTenant("USGM")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId2)" ng-attr-id="btnId2" onclick='whichTenant("Java")'>
 						<div class="button-fill blue">
-							<div class="button-text">Walmart.com</div>
+							<div class="button-text">Java</div>
 							<div class="button-inside">
-								<div class="inside-text">dotcom&nbsplinks</div>
+								<div class="inside-text">java&nbsplinks</div>
 							</div>
 						</div>
 				</a> 
-				<a href="#" ng-click="getUrlFromTenant(btnId3)" ng-attr-id="btnId3" onclick='whichTenant("USGR")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId3)" ng-attr-id="btnId3" onclick='whichTenant("Terminal")'>
 						<div class="button-fill blue">
-							<div class="button-text">US Groceries</div>
+							<div class="button-text">Terminal</div>
 							<div class="button-inside">
-								<div class="inside-text">usgr&nbsplinks</div>
+								<div class="inside-text">terminal&nbsplinks</div>
 							</div>
 						</div>
 				</a> 
-				<a href="#" ng-click="getUrlFromTenant(btnId4)" ng-attr-id="btnId4" onclick='whichTenant("SAMUS")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId4)" ng-attr-id="btnId4" onclick='whichTenant("CI-CD")'>
 						<div class="button-fill blue">
-							<div class="button-text">Sams Club US</div>
+							<div class="button-text">CI-CD</div>
 							<div class="button-inside">
-								<div class="inside-text">sams&nbsplinks</div>
+								<div class="inside-text">cid&nbsplinks</div>
 							</div>
 						</div>
 				</a> 
-				<a href="#" ng-click="getUrlFromTenant(btnId5)" ng-attr-id="btnId5" onclick='whichTenant("GMC")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId5)" ng-attr-id="btnId5" onclick='whichTenant("No-Sql")'>
 						<div class="button-fill blue">
-							<div class="button-text">Canada Merch</div>
+							<div class="button-text">No-Sql</div>
 							<div class="button-inside">
-								<div class="inside-text">gmc&nbsplinks</div>
+								<div class="inside-text">nosql&nbsplinks</div>
 							</div>
 						</div>
 				</a> 
-				<a href="#" ng-click="getUrlFromTenant(btnId6)" ng-attr-id="btnId6" onclick='whichTenant("OTHERS")'>
+				<a href="#" ng-click="getUrlFromTenant(btnId6)" ng-attr-id="btnId6" onclick='whichTenant("Containers")'>
 						<div class="button-fill blue">
-							<div class="button-text">Miscellaneous</div>
+							<div class="button-text">Containers</div>
+							<div class="button-inside">
+								<div class="inside-text">containers&nbsplinks</div>
+							</div>
+						</div>
+				</a>
+				<a href="#" ng-click="getUrlFromTenant(btnId7)" ng-attr-id="btnId6" onclick='whichTenant("Investments")'>
+						<div class="button-fill blue">
+							<div class="button-text">Investments</div>
+							<div class="button-inside">
+								<div class="inside-text">investments&nbsplinks</div>
+							</div>
+						</div>
+				</a>
+				<a href="#" ng-click="getUrlFromTenant(btnId8)" ng-attr-id="btnId6" onclick='whichTenant("OTHERS")'>
+						<div class="button-fill blue">
+							<div class="button-text">OTHERS</div>
 							<div class="button-inside">
 								<div class="inside-text">other&nbsplinks</div>
 							</div>
 						</div>
 				</a>
-				
-				<a href="addurl.jsp" ng-attr-id="btnId7">
+				<a href="addurl.jsp" ng-attr-id="btnId9">
 						<div class="button-fill grey">
 							<div class="button-text">Add New ?</div>
 							<div class="button-inside">
-								<div class="inside-text">add&nbspnew&nbsplinks</div>
+								<div class="inside-text">add&nbspnew&nbsplink&nbsp?</div>
 							</div>
 						</div>
 				</a>
@@ -181,8 +202,7 @@ function whichTenant(txt) {
 					</thead>
 					<tr ng-repeat="u in urls | filter:search | orderBy:'tenant_desc' ">
 						<td>{{ u.tenant_desc }}</td>
-						<td><a href="{{ u.tenant_url  }}" target="_blank">{{
-								u.tenant_url }}</a></td>
+						<td><a href="{{ u.tenant_url  }}" target="_blank">{{u.tenant_url }}</a></td>
 					</tr>
 				</table>
 			</div>

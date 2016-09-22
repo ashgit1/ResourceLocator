@@ -5,11 +5,11 @@
  
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
-        <property name="hibernate.connection.url">jdbc:derby://localhost:1527/resource_db</property>
-        <!-- <property name="hibernate.connection.username"></property>
-        <property name="hibernate.connection.password"></property> -->
-        <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/resource_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Root@123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="hbm2ddl.auto">update</property>

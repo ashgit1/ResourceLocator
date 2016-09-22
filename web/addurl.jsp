@@ -16,11 +16,13 @@
                 <td>Tenant Name :</td>
                 <td>
                  <select name="tenantName" style="width: 200px;" required>
-  					<option value="ASDA" selected="selected">ASDA</option>
-  					<option value="USGM">USGM</option>
-  					<option value="USGR">USGR</option>
-  					<option value="SAMUS">SAMUS</option>
-  					<option value="GMC">GMC</option>
+  					<option value="Personal" selected="selected">Personal</option>
+  					<option value="Java">Java</option>
+  					<option value="Terminal">Terminal</option>
+  					<option value="CI-CD">CI-CD</option>
+  					<option value="No-Sql">No-Sql</option>
+  					<option value="Containers">Containers</option>
+  					<option value="Investments">Investments</option>
   					<option value="OTHERS">OTHERS</option>
 				</select>
                 <!-- <input type="text" name="tenantName" size="30" ng-model="tenantName" required/></td> -->
@@ -55,8 +57,8 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('validateCtrl', function($scope) {
-    $scope.description = 'qa3';
-    $scope.url = 'http://www.asda.com';
+    $scope.description = 'Google';
+    $scope.url = 'http://www.google.co.in';
 });
 </script>
 </center>
